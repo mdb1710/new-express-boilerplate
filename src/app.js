@@ -15,6 +15,8 @@ app.use(morgan(morganOption))
 app.use(cors())
 app.use(helmet())
 
+// will put new functions here
+
 app.use(function errorHandler(error, req, res, next) {
        let response
        if (NODE_ENV === 'production') {
